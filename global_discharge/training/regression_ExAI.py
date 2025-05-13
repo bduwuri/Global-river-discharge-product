@@ -17,7 +17,7 @@ scalar_y_class = world_map_functions.scalar_y_class
 
 #%%
 dr = Read_data.read_data(dir_name = 'duvvuri.b')
-hc_data = dr.read_hc_data(type_ = 'regression')
+hc_data = dr.read_hc_data(type_ = 'classification')
 data_train, data_test= train_test_split(hc_data, test_size=0.05, random_state=42)
 
 #%%

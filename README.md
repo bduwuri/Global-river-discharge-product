@@ -6,7 +6,7 @@ Key Features
   GRACE (Gravity Recovery and Climate Experiment) for water storage changes
   MODIS (Moderate Resolution Imaging Spectroradiometer) for surface water extent
   IMERG (Integrated Multi-satellitE Retrievals for GPM) for precipitation estimates
-2. Implements state-of-the-art machine learning models:
+2. Implements multimodel approach using state-of-the-art machine learning models:
   Ensemble Trees (XGBoost, Random Forest)
   Artificial Neural Networks (ANN)
   Support Vector Regression (SVR)

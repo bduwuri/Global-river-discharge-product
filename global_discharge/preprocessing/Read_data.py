@@ -86,7 +86,7 @@ class read_data():
             index_number = self.regions_dict[region][0]
             data_cat = self._get_data_features(index_number,region)    
             data_merge = pd.concat([data_merge,pd.merge(data_cat,data2,how='inner',on='COMID')])
-        print(data_merge.shape)
+        print(data_merge.shape,len(data_merge['COMID'].unique()))
         
         data_merge = data_merge[(data_merge.actual_numdata>90) & (data_merge.beta>0) & (data_merge.beta<=1.0)& (data_merge.gc<=1.3) & (data_merge.gc>=0.7)& (data_merge.alpha<=35)]
         # data_merge = data_merge[ (data_merge.gc<=1.3) & (data_merge.gc>=0.7)]
@@ -96,8 +96,8 @@ class read_data():
             data_merge = data_merge[data_merge['KGE_test']>=0.32]
         else:
             data_merge = data_merge
-        
-        print(data_merge.shape, data_merge.columns)
+        print(data_merge.shape,len(data_merge['COMID'].unique()))
+        print(data_merge.columns)
         
         
         # ---- remove multiple Gauges in same catchments
