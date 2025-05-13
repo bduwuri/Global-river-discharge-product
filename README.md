@@ -15,3 +15,5 @@ Key Features \
   Gaussian Processes (GP)\
   \
 3. Incorporates Explainable AI techniques for model interpretation and transparency\
+\
+[![Example Output](docs/example_result.png)](docs/example_result.png)
